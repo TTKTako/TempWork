@@ -1,0 +1,93 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.MainCenter {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.MainCenter p {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.StartForm {
+    margin-bottom: 30px;
+}
+
+.StartForm input {
+    display: block;
+    width: calc(100% - 30%);
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.pill, .des, .Prop, .Surgery, .Screening, .TypeOparation, .pillHis {
+    margin-bottom: 20px;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    background-color: #f0f4f8;
+}
+
+.pill p, .des p, .Prop p, .Surgery p, .Screening p, .TypeOparation p, .pillHis p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pill div, .des div, .Prop div, .Surgery div, .Screening div, .TypeOparation div, .pillHis div {
+    margin-bottom: 10px;
+}
+
+.pill div input[type="checkbox"], .des div input[type="checkbox"], .Surgery div input[type="checkbox"], .Screening div input[type="checkbox"], .TypeOparation div input[type="checkbox"], .pillHis div input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.Prop div input[type="text"], .pill div input[type="text"], .des div input[type="text"], .pillHis div input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 4px;
+}
+
+#submited {
+    transition: all .15s ease-in;
+    padding: 10px 50px;
+    margin: 20px auto;
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+#submited:hover {
+    transition: all .15s ease-in;
+    padding: 10px 55px;
+    background-color: #0071ea;
+    box-shadow: 0 0 10px 3px #91c6ff ;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiPAC</title>
+
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Checkbox.css">
+    <script src="/Main.js"></script>
+    <script src="/BestCheck.js"></script>
+</head>
+
+<body bgcolor="#a8cbf0">
+    <div class="MainCenter">
+
+        <p style="font-size: 25px; font-weight: bold;" align="center">แบบประเมินผู้ป่วยก่อนส่งปรึกษา SiPAC</p>
+        <br>
+        <div class="StartForm">
+            <input type="date" id="DateSave"><br><br>
+            <input placeholder="HR Number" type="number" id="HR"><br><br>
+            <div>ชื่อ-นามสกุล
+                <input placeholder="Name Surname" type="text" id="Name">
+            </div>
+            <div>อายุ
+                <input placeholder="Age" type="number" id="Age">
+            </div>
+        </div>
+
+        <div class="pillHis">
+            <p>ประวัติใช้ยา</p>
+            <div>ยาละลายลิ่มเลือด
+                <input type="checkbox" id="HavepillUse1">
+            </div>
+            <div>ยาต้านเกล็ดเลือด
+                <input type="checkbox" id="HavepillUse2">
+            </div>
+            <div>ยาต้านไวรัส
+                <input type="checkbox" id="HavepillUse3">
+            </div>
+            <div>
+                <input placeholder="ระบุชื่อยา" type="text" id="HavepillExplanHistory">
+            </div>
+        </div>
+
+        <div class="pill">
+            <p>ประวัติแพ้ยา</p>
+            <div>ไม่มี
+                <input type="checkbox" id="NotHavepill">
+            </div>
+            <div>มี
+                <input type="checkbox" id="Havepill">
+                <input placeholder="ระบุชื่อยา" type="text" id="HavepillExplan">
+            </div>
+        </div>
+
+        <div class="des">
+            <p>ประวัติโรคประจำตัว</p>
+            <div>ไม่มี
+                <input type="checkbox" id="NotHavedes">
+            </div>
+            <div>เบาหวาน
+                <input type="checkbox" id="Havedes1">
+            </div>
+            <div>ไทรอยด์ผิดปกติ
+                <input type="checkbox" id="Havedes2">
+            </div>
+            <div>ความดันโลหิตสูง
+                <input type="checkbox" id="Havedes3">
+            </div>
+            <div>โรคหัวใจ
+                <input type="checkbox" id="Havedes4">
+            </div>
+            <div>โรคไต
+                <input type="checkbox" id="Havedes5">
+            </div>
+            <div>อื่นๆ
+                <input placeholder="ระบุชื่อโรค" type="text" id="HavedesExplan">
+            </div>
+        </div>
+
+        <div class="Prop">
+            <p>Properative Evaluation</p>
+            <div>การวินิจฉัย
+                <input type="text" id="Prop1">
+            </div>
+            <div>แผนการผ่าตัด
+                <input type="text" id="Prop2">
+            </div>
+        </div>
+
+        <div class="TypeOparation">
+            <p>ชนิดการผ่าตัด</p>
+            <div>Laparotomy
+                <input type="checkbox" id="TypeOparation1">
+            </div>
+            <div>Laparoscopy
+                <input type="checkbox" id="TypeOparation2">
+            </div>
+        </div>
+
+        <div class="Surgery">
+            <p>ประเภทการผ่าตัด</p>
+            <div>Minor surgery / Same day surgery / Ambulatory surgery
+                <input type="checkbox" id="surgeryMinor">
+            </div>
+            <div>Major surgery
+                <input type="checkbox" id="surgeryMajor">
+            </div>
+        </div>
+
+        <div class="Screening">
+            <p>Screen laboratory test</p>
+
+            <div>Minor surgery
+                <input type="checkbox" id="Minor">
+            </div>
+            <div>Major surgery
+                <input type="checkbox" id="Major">
+            </div>
+            <div>Oncologic surgery
+                <input type="checkbox" id="Oncologic">
+            </div>
+        </div>
+
+
+        <button id="submited" onclick="Analyse()">Submit</button>
+
+        <button class="BTT" onclick="topFunction()">
+            <svg class="svgIcon" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+                </path>
+            </svg>
+        </button>
+    </div>
+
+    <br><br><br>
+</body>
+
+</html>
