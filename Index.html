@@ -36,7 +36,7 @@ window.onload = function () {
 function Analyse() {
 
   var labResult = "";
-
+  var url = "https://script.google.com/macros/s/AKfycbxt4tRcKw3c-8ZToGQvaUeuAYLr3JSx9EXhefH3yw9e4wEKH24BFCaMLuCYaWh3gQW-/exec";
   const data = {
     HR: document.getElementById('HR').value,
     Name: document.getElementById('Name').value,
@@ -67,6 +67,12 @@ function Analyse() {
     Oncologic: document.getElementById('Oncologic').checked
   };
 
+    fetch(url)
+        .then((data) => {
+            makeOutput(data);
+        });
+
+    
   console.log();
 
   if (data.Age > 45) {
